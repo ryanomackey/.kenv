@@ -83,4 +83,10 @@ const left = x + xOffset
 const right = x + width + xOffset
 const bottom = y + height + yOffset
 
+await applescript(`
+  tell application "System Events"
+    tell process "Kit" to set its visible to false
+  end tell
+`);
+
 setActiveAppBounds({ top, left, right, bottom })

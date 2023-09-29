@@ -105,3 +105,6 @@ dist
 .history
 .scripts
 kenvs/
+
+# OS
+.DS_Store
